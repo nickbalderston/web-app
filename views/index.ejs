@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<ul class="stories">
+    <% for(var i=0; i<stories.length; i++) {%>
+      <li class="story">
+        <span><%= stories[i].story %></span>
+        <br>
+        <% for(var j=0; j<stories[i].topics.length; j++) {%>
+          <span><b><%= stories[i].topics[j] %></b>, </span>
+        <% } %>  
+      </li>
+    <% } %>
+  </ul>
+  </body>
+
+ 
+  </html>
